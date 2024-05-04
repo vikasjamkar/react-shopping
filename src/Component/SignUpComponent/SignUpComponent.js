@@ -14,7 +14,7 @@ const SignUpComponent = () => {
   const handleSubmit = (values) => {
     axios({
       method: "post",
-      url: "http://127.0.0.1:2050/register",
+      url: "https://react-shopping-teal.vercel.app/register",
       data: values,
     })
       .then(() => {
