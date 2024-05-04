@@ -17,7 +17,7 @@ const SignInComponent = () => {
       password: values.Password,
     };
     axios
-      .post("http://127.0.0.1:2050/login", req)
+      .post("https://react-shopping-teal.vercel.app/login", req)
       .then((response) => {
         if (response.data.length > 0) {
           sessionStorage.setItem("isLoggedIn", true);
